@@ -6,7 +6,7 @@ interface IdentifyKillerMenuProps {
 }
 
 export function IdentifyKillerMenu({ onConfirm, onCancel }: IdentifyKillerMenuProps) {
-  const suspects = Object.entries(NPC_INFO).filter(([id]) => id !== NPCS.INSPECTOR);
+  const suspects = Object.entries(NPC_INFO);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
